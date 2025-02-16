@@ -8,7 +8,7 @@ for /f "tokens=6 delims=[]. " %%# in ('ver') do if %%# geq 7600 (
 )
 
 :: IE9 Cummulative update kb number
-set IE9KB=kb5049994
+set IE9KB=kb5051972
 :: 's' for shutdown, 'r' for restart
 set "shutdown_mode=r"
 set "shutdown_timer=60"
