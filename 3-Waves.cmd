@@ -8,7 +8,7 @@ for /f "tokens=6 delims=[]. " %%# in ('ver') do if %%# geq 7600 (
 )
 
 :: IE9 Cummulative update kb number
-set IE9KB=kb5051972
+set IE9KB=kb5055515
 :: 's' for shutdown, 'r' for restart
 set "shutdown_mode=r"
 set "shutdown_timer=60"
@@ -822,11 +822,6 @@ echo ===========================================================================
 echo Finnished installing updates. The Windows Update is set to LegacyUpdate.
 echo Scanning for updates...
 echo ===============================================================================
-
-ping 127.0.0.1 -n %ping_timer%
-shutdown.exe /s /t %shutdown_timer%
-echo shutdown>>"%~dp0shutdown.txt"
-goto :EOF
 
 wuauclt /detectnow
 echo InitialScan>>"%~dp0log.txt"
