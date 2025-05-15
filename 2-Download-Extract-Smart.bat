@@ -142,6 +142,13 @@ REM echo =======================================================================
 REM echo ===================== Abbodi's Repacks ========================================
 REM echo ===============================================================================
 
+@REM for /f %%i in ("%~dp0001-Tools\DirectX-Repack*.zip") do (
+@REM 	if not exist "%~dp0211-Repacks\DirectX_Redist_Repack_x86_x64.exe" (
+@REM 		echo Extracting DirectX_Repack
+@REM 		"%programfiles%\7-Zip\7z.exe" x "%~dp0001-Tools\DirectX-Repack*.zip" -o"%~dp0211-Repacks\" -aoa > nul
+@REM 		ping 127.0.0.1 -n %ping_timer% > nul
+@REM 	)
+@REM )
 if exist "%~dp0001-Tools\DirectX-Repack*.zip" (
 	if not exist "%~dp0211-Repacks\DirectX_Redist_Repack_x86_x64.exe" (
 		echo Extracting DirectX_Repack

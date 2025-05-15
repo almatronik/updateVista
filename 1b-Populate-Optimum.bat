@@ -233,8 +233,14 @@ echo ;windows6.0-kb5052038-x86-2025-02-Security-Monthly-Quality-Rollup-for-WS200
 echo ;windows6.0-kb5053888-x64-2025-03-Security-Monthly-Quality-Rollup-for-WS2008.msu https://catalog.s.download.windowsupdate.com/c/msdownload/update/software/secu/2025/03/windows6.0-kb5053888-x64_d503536aaf2c582c3b8717ce3d50f14144a1acd5.msu>>302-CU\filelist.txt
 echo ;windows6.0-kb5053888-x86-2025-03-Security-Monthly-Quality-Rollup-for-WS2008.msu https://catalog.s.download.windowsupdate.com/c/msdownload/update/software/secu/2025/03/windows6.0-kb5053888-x86_13185cc3858a924c5cc45203742c0d3805aa0c3f.msu>>302-CU\filelist.txt
 
-echo windows6.0-kb5055609-x64-2025-04-Security-Monthly-Quality-Rollup-for-WS2008.msu https://catalog.s.download.windowsupdate.com/c/msdownload/update/software/secu/2025/04/windows6.0-kb5055609-x64_2ac8084a82302bbffe22ae2c6eede09f00294459.msu>>302-CU\filelist.txt
-echo windows6.0-kb5055609-x86-2025-04-Security-Monthly-Quality-Rollup-for-WS2008.msu https://catalog.s.download.windowsupdate.com/c/msdownload/update/software/secu/2025/04/windows6.0-kb5055609-x86_e1906723e99596367818aabb345b8f8432bb64c7.msu>>302-CU\filelist.txt
+echo ;windows6.0-kb5055609-x64-2025-04-Security-Monthly-Quality-Rollup-for-WS2008.msu https://catalog.s.download.windowsupdate.com/c/msdownload/update/software/secu/2025/04/windows6.0-kb5055609-x64_2ac8084a82302bbffe22ae2c6eede09f00294459.msu>>302-CU\filelist.txt
+echo ;windows6.0-kb5055609-x86-2025-04-Security-Monthly-Quality-Rollup-for-WS2008.msu https://catalog.s.download.windowsupdate.com/c/msdownload/update/software/secu/2025/04/windows6.0-kb5055609-x86_e1906723e99596367818aabb345b8f8432bb64c7.msu>>302-CU\filelist.txt
+
+echo ;windows6.0-kb5058449-x64-2025-05-Security-Monthly-Quality-Rollup-for-WS2008.msu https://catalog.s.download.windowsupdate.com/d/msdownload/update/software/secu/2025/05/windows6.0-kb5058449-x64_3db96e5c6dda2a09c6e64cff304f2de4036a52f3.msu>>302-CU\filelist.txt
+echo ;windows6.0-kb5058449-x86-2025-05-Security-Monthly-Quality-Rollup-for-WS2008.msu https://catalog.s.download.windowsupdate.com/d/msdownload/update/software/secu/2025/05/windows6.0-kb5058449-x86_bc38c71ca1377e951d98d2f3e0fd024c003d5bb5.msu>>302-CU\filelist.txt
+
+echo windows6.0-kb5061198-x64-2025-05-Security-Monthly-Quality-Rollup-for-WS2008.msu https://catalog.s.download.windowsupdate.com/d/msdownload/update/software/secu/2025/05/windows6.0-kb5061198-x64_e230859f83f853706399d12c675234aa0cfce6d9.msu>>302-CU\filelist.txt
+echo windows6.0-kb5061198-x86-2025-05-Security-Monthly-Quality-Rollup-for-WS2008.msu https://catalog.s.download.windowsupdate.com/c/msdownload/update/software/secu/2025/05/windows6.0-kb5061198-x86_7bbfcc7fab05c12ef67da556d27537a8a6e0a9c1.msu>>302-CU\filelist.txt
 
 ::--------------------------------------------------------------------------------------
 mkdir 314-IE9-CU
