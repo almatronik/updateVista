@@ -1,10 +1,6 @@
 ::--------------------------------------------------------------------------------------
 mkdir 001-Tools
 
-echo ;7zip-2301-x86.exe https://www.7-zip.org/a/7z2301.exe>>001-Tools\filelist.txt
-echo ;7zip-2301-x64.exe https://www.7-zip.org/a/7z2301-x64.exe>>001-Tools\filelist.txt
-echo ;7zip-2408-x86-20240811.exe https://www.7-zip.org/a/7z2408.exe>>001-Tools\filelist.txt
-echo ;7zip-2408-x64-20240811.exe https://www.7-zip.org/a/7z2408-x64.exe>>001-Tools\filelist.txt
 echo 7zip-2409-x64-20241129.exe https://7-zip.org/a/7z2409-x64.exe>>001-Tools\filelist.txt
 echo 7zip-2409-x86-20241129.exe https://7-zip.org/a/7z2409.exe>>001-Tools\filelist.txt
 
@@ -37,11 +33,17 @@ echo windows6.0-kb4493730-x86-2019-04-Servicing-stack-update-for-WS2008.msu http
 ::--------------------------------------------------------------------------------------
 mkdir 202-SSU
 
-echo ;windows6.0-kb4550737-x64-2020-04-Servicing-Stack-Update-for-WS2008.msu https://catalog.s.download.windowsupdate.com/c/msdownload/update/software/secu/2020/04/windows6.0-kb4550737-x64_32d42377c0460b20d02ee2762265303544559967.msu>>202-SSU\filelist.txt
-echo ;windows6.0-kb4550737-x86-2020-04-Servicing-Stack-Update-for-WS2008.msu https://catalog.s.download.windowsupdate.com/c/msdownload/update/software/secu/2020/04/windows6.0-kb4550737-x86_69ff22bfa2ee7c67ba9768fe8a737272902a7212.msu>>202-SSU\filelist.txt
+echo ;windows6.0-kb4555448-x64-2020-05-Servicing-Stack-Update-for-WS2008.msu https://catalog.s.download.windowsupdate.com/d/msdownload/update/software/secu/2020/04/windows6.0-kb4555448-x64_f5b9ba7a64280ac2837a27bdee419ec5b73dc99f.msu>>202-SSU\filelist.txt
+echo ;windows6.0-kb4555448-x86-2020-05-Servicing-Stack-Update-for-WS2008.msu https://catalog.s.download.windowsupdate.com/d/msdownload/update/software/secu/2020/04/windows6.0-kb4555448-x86_02cb4a47e3cc77f0372e0b9842be57f76e5eac8d.msu>>202-SSU\filelist.txt
 
 echo ;windows6.0-kb4575904-x64-2020-07-ESU-Preparation-Package-for-WS2008.msu https://catalog.s.download.windowsupdate.com/c/msdownload/update/software/secu/2020/07/windows6.0-kb4575904-x64_9272724f637d85a12bfe022191c1ba56cd4bc59e.msu>>202-SSU\filelist.txt
 echo ;windows6.0-kb4575904-x86-2020-07-ESU-Preparation-Package-for-WS2008.msu https://catalog.s.download.windowsupdate.com/c/msdownload/update/software/secu/2020/07/windows6.0-kb4575904-x86_b03d9b5a886b7a8271fb0e3cd10eb5c25b79acb5.msu>>202-SSU\filelist.txt
+
+echo ;windows6.0-kb5016129-x64-2022-07-Servicing-Stack-Update-for-WS2008.msu https://catalog.s.download.windowsupdate.com/d/msdownload/update/software/secu/2022/07/windows6.0-kb5016129-x64_89f963d1f75a4afcc55c287d530c9336fbfbf2aa.msu>>202-SSU\filelist.txt
+echo ;windows6.0-kb5016129-x86-2022-07-Servicing-Stack-Update-for-WS2008.msu https://catalog.s.download.windowsupdate.com/d/msdownload/update/software/secu/2022/07/windows6.0-kb5016129-x86_08d74b20496aee2e09bd59acf274d201146c33eb.msu>>202-SSU\filelist.txt
+
+echo windows6.0-kb5016891-x64-2022-08-ESU-Licensing-Preparation-Package-for-WS2008.msu https://catalog.s.download.windowsupdate.com/c/msdownload/update/software/secu/2022/08/windows6.0-kb5016891-x64_1b5f7e1030f5d229a7618c09f1617fd1ed00e90f.msu>>202-SSU\filelist.txt
+echo windows6.0-kb5016891-x86-2022-08-ESU-Licensing-Preparation-Package-for-WS2008.msu https://catalog.s.download.windowsupdate.com/c/msdownload/update/software/secu/2022/08/windows6.0-kb5016891-x86_cf3aef17f12a6dc85dd20a06e5ba9f4c882e286f.msu>>202-SSU\filelist.txt
 
 echo ;windows6.0-kb5033466-x64-2023-12-Servicing-Stuck-Update-for-WS2008.msu https://catalog.s.download.windowsupdate.com/c/msdownload/update/software/secu/2023/12/windows6.0-kb5033466-x64_06511d01588a683607ca8fe6a094f7bd292f6b1b.msu>>202-SSU\filelist.txt
 echo ;windows6.0-kb5033466-x86-2023-12-Servicing-Stuck-Update-for-WS2008.msu https://catalog.s.download.windowsupdate.com/d/msdownload/update/software/secu/2023/12/windows6.0-kb5033466-x86_2774074289651d45077083d45f3f4b0957d741d3.msu>>202-SSU\filelist.txt

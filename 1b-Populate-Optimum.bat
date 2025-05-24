@@ -1,10 +1,6 @@
 ::--------------------------------------------------------------------------------------
 mkdir 001-Tools
 
-echo ;7zip-2301-x86.exe https://www.7-zip.org/a/7z2301.exe>>001-Tools\filelist.txt
-echo ;7zip-2301-x64.exe https://www.7-zip.org/a/7z2301-x64.exe>>001-Tools\filelist.txt
-echo ;7zip-2408-x86-20240811.exe https://www.7-zip.org/a/7z2408.exe>>001-Tools\filelist.txt
-echo ;7zip-2408-x64-20240811.exe https://www.7-zip.org/a/7z2408-x64.exe>>001-Tools\filelist.txt
 echo 7zip-2409-x64-20241129.exe https://7-zip.org/a/7z2409-x64.exe>>001-Tools\filelist.txt
 echo 7zip-2409-x86-20241129.exe https://7-zip.org/a/7z2409.exe>>001-Tools\filelist.txt
 
@@ -15,15 +11,7 @@ echo 410-WMF30_KB2506146_Vista_Installer-x86-x64.7z https://gitlab.com/stdout12/
 
 echo DirectX-Repack-x86-x64.zip https://github.com/stdin82/htfx/releases/download/v0.0.2/DirectX_Redist_Repack_x86_x64.zip>>001-Tools\filelist.txt
 
-echo ;dotNetFx35-Repack-x86-x64-20240113.zip https://github.com/abbodi1406/dotNetNT6/releases/download/v2024.01.09/dotNetFx35_x86_x64_20240113.zip>>001-Tools\filelist.txt
 echo dotNetFx35-Repack-x86-x64-20240709.zip https://github.com/abbodi1406/dotNetNT6/releases/download/v2024.07.09/dotNetFx35_x86_x64_20240709.zip>>001-Tools\filelist.txt
-
-echo ;NDP462-Repack-x86-x64-ENU-20240109.zip https://github.com/abbodi1406/dotNetNT6/releases/download/v2024.01.09/NDP462-x86-x64-ENU_20240109.zip>>001-Tools\filelist.txt
-echo ;NDP462-Repack-x86-x64-ENU-20240213.zip https://github.com/abbodi1406/dotNetNT6/releases/download/v2024.02.13/NDP462-x86-x64-ENU_20240213.zip>>001-Tools\filelist.txt
-echo ;NDP462-Repack-x86-x64-ENU-20240514.zip https://github.com/abbodi1406/dotNetNT6/releases/download/v2024.05.14/NDP462-x86-x64-ENU_20240514.zip>>001-Tools\filelist.txt
-echo ;NDP462-Repack-x86-x64-ENU-20240813.zip https://github.com/abbodi1406/dotNetNT6/releases/download/v2024.08.13/NDP462-x86-x64-ENU_20240813.zip>>001-Tools\filelist.txt
-echo ;NDP462-Repack-x86-x64-ENU-20241008.zip https://github.com/abbodi1406/dotNetNT6/releases/download/v2024.10.08/NDP462-x86-x64-ENU_20241008.zip>>001-Tools\filelist.txt
-echo ;NDP462-Repack-x86-x64-ENU-20250114.zip https://github.com/abbodi1406/dotNetNT6/releases/download/v2025.01.14/NDP462-x86-x64-ENU_20250114.zip>>001-Tools\filelist.txt
 echo NDP462-Repack-x86-x64-ENU-20250408.zip https://github.com/abbodi1406/dotNetNT6/releases/download/v2025.04.08/NDP462-x86-x64-ENU_20250408.zip>>001-Tools\filelist.txt
 
 ::--------------------------------------------------------------------------------------
@@ -161,11 +149,14 @@ echo ie9-windows6.0-kb0982861-x86-for-Vista.exe https://catalog.s.download.windo
 ::--------------------------------------------------------------------------------------
 mkdir 202-SSU
 
-echo ;windows6.0-kb4550737-x64-2020-04-Servicing-Stack-Update-for-WS2008.msu https://catalog.s.download.windowsupdate.com/c/msdownload/update/software/secu/2020/04/windows6.0-kb4550737-x64_32d42377c0460b20d02ee2762265303544559967.msu>>202-SSU\filelist.txt
-echo ;windows6.0-kb4550737-x86-2020-04-Servicing-Stack-Update-for-WS2008.msu https://catalog.s.download.windowsupdate.com/c/msdownload/update/software/secu/2020/04/windows6.0-kb4550737-x86_69ff22bfa2ee7c67ba9768fe8a737272902a7212.msu>>202-SSU\filelist.txt
+echo ;windows6.0-kb4555448-x64-2020-05-Servicing-Stack-Update-for-WS2008.msu https://catalog.s.download.windowsupdate.com/d/msdownload/update/software/secu/2020/04/windows6.0-kb4555448-x64_f5b9ba7a64280ac2837a27bdee419ec5b73dc99f.msu>>202-SSU\filelist.txt
+echo ;windows6.0-kb4555448-x86-2020-05-Servicing-Stack-Update-for-WS2008.msu https://catalog.s.download.windowsupdate.com/d/msdownload/update/software/secu/2020/04/windows6.0-kb4555448-x86_02cb4a47e3cc77f0372e0b9842be57f76e5eac8d.msu>>202-SSU\filelist.txt
 
 echo ;windows6.0-kb4575904-x64-2020-07-ESU-Preparation-Package-for-WS2008.msu https://catalog.s.download.windowsupdate.com/c/msdownload/update/software/secu/2020/07/windows6.0-kb4575904-x64_9272724f637d85a12bfe022191c1ba56cd4bc59e.msu>>202-SSU\filelist.txt
 echo ;windows6.0-kb4575904-x86-2020-07-ESU-Preparation-Package-for-WS2008.msu https://catalog.s.download.windowsupdate.com/c/msdownload/update/software/secu/2020/07/windows6.0-kb4575904-x86_b03d9b5a886b7a8271fb0e3cd10eb5c25b79acb5.msu>>202-SSU\filelist.txt
+
+echo ;windows6.0-kb5016129-x64-2022-07-Servicing-Stack-Update-for-WS2008.msu https://catalog.s.download.windowsupdate.com/d/msdownload/update/software/secu/2022/07/windows6.0-kb5016129-x64_89f963d1f75a4afcc55c287d530c9336fbfbf2aa.msu>>202-SSU\filelist.txt
+echo ;windows6.0-kb5016129-x86-2022-07-Servicing-Stack-Update-for-WS2008.msu https://catalog.s.download.windowsupdate.com/d/msdownload/update/software/secu/2022/07/windows6.0-kb5016129-x86_08d74b20496aee2e09bd59acf274d201146c33eb.msu>>202-SSU\filelist.txt
 
 echo windows6.0-kb5016891-x64-2022-08-ESU-Licensing-Preparation-Package-for-WS2008.msu https://catalog.s.download.windowsupdate.com/c/msdownload/update/software/secu/2022/08/windows6.0-kb5016891-x64_1b5f7e1030f5d229a7618c09f1617fd1ed00e90f.msu>>202-SSU\filelist.txt
 echo windows6.0-kb5016891-x86-2022-08-ESU-Licensing-Preparation-Package-for-WS2008.msu https://catalog.s.download.windowsupdate.com/c/msdownload/update/software/secu/2022/08/windows6.0-kb5016891-x86_cf3aef17f12a6dc85dd20a06e5ba9f4c882e286f.msu>>202-SSU\filelist.txt
@@ -191,53 +182,11 @@ mkdir 302-CU
 echo windows6.0-kb4534303-x64-2020-01-Security-Monthly-Quality-Rollup-for-WS2008.msu https://catalog.s.download.windowsupdate.com/d/msdownload/update/software/secu/2020/01/windows6.0-kb4534303-x64_f318a56b0a7761596ad17746921949a62912d15c.msu>>302-CU\filelist.txt
 echo windows6.0-kb4534303-x86-2020-01-Security-Monthly-Quality-Rollup-for-WS2008.msu https://catalog.s.download.windowsupdate.com/d/msdownload/update/software/secu/2020/01/windows6.0-kb4534303-x86_56cad84fe0dd3a064031cf55d94909738f0ed205.msu>>302-CU\filelist.txt
 
-echo ;windows6.0-kb5034173-x64-2024-01-Security-Monthly-Quality-Rollup-for-WS2008.msu https://catalog.s.download.windowsupdate.com/c/msdownload/update/software/secu/2024/01/windows6.0-kb5034173-x64_d67acf7c65c3f43dc9030f221171ed288d4e2598.msu>>302-CU\filelist.txt
-echo ;windows6.0-kb5034173-x86-2024-01-Security-Monthly-Quality-Rollup-for-WS2008.msu https://catalog.s.download.windowsupdate.com/c/msdownload/update/software/secu/2024/01/windows6.0-kb5034173-x86_0ba940477d039dad08b26f0d88272583362c81e5.msu>>302-CU\filelist.txt
-
-echo ;windows6.0-kb5033898-x64-2024-01-Security-and-Quality-Rollup-for-.NET2.0^&3.0.msu https://catalog.s.download.windowsupdate.com/c/msdownload/update/software/secu/2023/12/windows6.0-kb5033898-x64_0281f148dda836f8b0d213aeca21985c899b19cf.msu>>302-CU\filelist.txt
-echo ;windows6.0-kb5033898-x86-2024-01-Security-and-Quality-Rollup-for-.NET2.0^&3.0.msu https://catalog.s.download.windowsupdate.com/c/msdownload/update/software/secu/2023/12/windows6.0-kb5033898-x86_0cabaa382a9f4fb214095bde5a9a55560381bc83.msu>>302-CU\filelist.txt
-
-echo ;windows6.0-kb5034795-x64-2024-02-Security-Monthly-Quality-Rollup-for-WS2008.msu https://catalog.s.download.windowsupdate.com/d/msdownload/update/software/secu/2024/02/windows6.0-kb5034795-x64_60a6296ed722fa688d7eae7cc42f75730af19418.msu>>302-CU\filelist.txt
-echo ;windows6.0-kb5034795-x86-2024-02-Security-Monthly-Quality-Rollup-for-WS2008.msu https://catalog.s.download.windowsupdate.com/c/msdownload/update/software/secu/2024/02/windows6.0-kb5034795-x86_1b00cb44b49db0d048a13498ce7c15900fb83f02.msu>>302-CU\filelist.txt
-
-echo ;windows6.0-kb5035920-x64-2024-03-Security-Monthly-Quality-Rollup-for-WS2008.msu https://catalog.s.download.windowsupdate.com/c/msdownload/update/software/secu/2024/03/windows6.0-kb5035920-x64_423f69411d861a3c49e6aaec5a43e5f5e5ec4b7c.msu>>302-CU\filelist.txt
-echo ;windows6.0-kb5035920-x86-2024-03-Security-Monthly-Quality-Rollup-for-WS2008.msu https://catalog.s.download.windowsupdate.com/d/msdownload/update/software/secu/2024/03/windows6.0-kb5035920-x86_00d778950db952ddee2b714b0046cf136704cfc7.msu>>302-CU\filelist.txt
-
-echo ;windows6.0-kb5037800-x64-2024-05-Security-Monthly-Quality-Rollup-for-WS2008.msu https://catalog.s.download.windowsupdate.com/d/msdownload/update/software/secu/2024/05/windows6.0-kb5037800-x64_0e269e3efac765c5b37bc93e64b5d006dcbb519d.msu>>302-CU\filelist.txt
-echo ;windows6.0-kb5037800-x86-2024-05-Security-Monthly-Quality-Rollup-for-WS2008.msu https://catalog.s.download.windowsupdate.com/c/msdownload/update/software/secu/2024/05/windows6.0-kb5037800-x86_70845754cb97268a89517271446b829041ff5487.msu>>302-CU\filelist.txt
-
-echo ;windows6.0-kb5039245-x64-2024-06-Security-Monthly-Quality-Rollup-for-WS2008.msu https://catalog.s.download.windowsupdate.com/d/msdownload/update/software/secu/2024/06/windows6.0-kb5039245-x64_5a99408366232385cebdc943c0033f298a7ce28c.msu>>302-CU\filelist.txt
-echo ;windows6.0-kb5039245-x86-2024-06-Security-Monthly-Quality-Rollup-for-WS2008.msu https://catalog.s.download.windowsupdate.com/c/msdownload/update/software/secu/2024/06/windows6.0-kb5039245-x86_8e9054e3e3b42959b790b0d22fc97d56242d6b56.msu>>302-CU\filelist.txt
-
-echo ;windows6.0-kb5041850-x64-2024-08-Security-Monthly-Quality-Rollup-for-WS2008.msu https://catalog.s.download.windowsupdate.com/c/msdownload/update/software/secu/2024/08/windows6.0-kb5041850-x64_625d4d302f4aee5bb67450f7b1de1542f876acbe.msu>>302-CU\filelist.txt
-echo ;windows6.0-kb5041850-x86-2024-08-Security-Monthly-Quality-Rollup-for-WS2008.msu https://catalog.s.download.windowsupdate.com/c/msdownload/update/software/secu/2024/08/windows6.0-kb5041850-x86_f161fb94b896eccfe18bc5f3de1dc7c66956d48d.msu>>302-CU\filelist.txt
-
-echo ;windows6.0-kb5041939-x64-2024-08-Security-and-Quality-Rollup-for-.NET2.0^&3.0.msu https://catalog.s.download.windowsupdate.com/d/msdownload/update/software/updt/2024/07/windows6.0-kb5041939-x64_ed3ea42da00fdc05871c57506056a1278a884b50.msu>>302-CU\filelist.txt
-echo ;windows6.0-kb5041939-x86-2024-08-Security-and-Quality-Rollup-for-.NET2.0^&3.0.msu https://catalog.s.download.windowsupdate.com/d/msdownload/update/software/updt/2024/07/windows6.0-kb5041939-x86_c6f88a031640a0bdd596dc6fdb0170693705234d.msu>>302-CU\filelist.txt
-
-echo ;windows6.0-kb5043135-x64-2024-09-Security-Monthly-Quality-Rollup-for-WS2008.msu https://catalog.s.download.windowsupdate.com/c/msdownload/update/software/secu/2024/09/windows6.0-kb5043135-x64_e8dd29c0607b9ecf9e42b152aea0f4a4686a6470.msu>>302-CU\filelist.txt
-echo ;windows6.0-kb5043135-x86-2024-09-Security-Monthly-Quality-Rollup-for-WS2008.msu https://catalog.s.download.windowsupdate.com/d/msdownload/update/software/secu/2024/09/windows6.0-kb5043135-x86_65847156427892c1e670b461e304ab4c3488eb89.msu>>302-CU\filelist.txt
+echo ;windows6.0-kb5014010-x64-2022-05-Security-Monthly-Quality-Rollup-for-WS2008.msu https://catalog.s.download.windowsupdate.com/d/msdownload/update/software/secu/2022/05/windows6.0-kb5014010-x64_e4730389d0079d105a0d9dca6477fa4e0214d3b0.msu>>302-CU\filelist.txt
+echo ;windows6.0-kb5014010-x86-2022-05-Security-Monthly-Quality-Rollup-for-WS2008.msu https://catalog.s.download.windowsupdate.com/c/msdownload/update/software/secu/2022/05/windows6.0-kb5014010-x86_69352a4256e22a83d24db55fdd6cd73abd091f85.msu>>302-CU\filelist.txt
 
 echo windows6.0-kb5044010-x64-2024-10-Security-and-Quality-Rollup-for-.NET2.0^&3.0.msu https://catalog.s.download.windowsupdate.com/c/msdownload/update/software/secu/2024/09/windows6.0-kb5044010-x64_63472c1a61e9981e451018b98f5b1c9451b458d4.msu>>302-CU\filelist.txt
 echo windows6.0-kb5044010-x86-2024-10-Security-and-Quality-Rollup-for-.NET2.0^&3.0.msu https://catalog.s.download.windowsupdate.com/c/msdownload/update/software/secu/2024/09/windows6.0-kb5044010-x86_87cd963f41d755184a1ebbcdef0935ab3a6c0d58.msu>>302-CU\filelist.txt
-
-echo ;windows6.0-kb5044320-x64-2024-10-Security-Monthly-Quality-Rollup-for-WS2008.msu https://catalog.s.download.windowsupdate.com/c/msdownload/update/software/secu/2024/09/windows6.0-kb5044320-x64_4bc4d6329f2a8242d0ff481cdb9d7fdc1880a8cd.msu>>302-CU\filelist.txt
-echo ;windows6.0-kb5044320-x86-2024-10-Security-Monthly-Quality-Rollup-for-WS2008.msu https://catalog.s.download.windowsupdate.com/c/msdownload/update/software/secu/2024/09/windows6.0-kb5044320-x86_77d1232af7eb295bedd4137db2e658a5ffc2b95b.msu>>302-CU\filelist.txt
-
-echo ;windows6.0-kb5050063-x64-2025-01-Security-Monthly-Quality-Rollup-for-WS2008.msu https://catalog.s.download.windowsupdate.com/c/msdownload/update/software/secu/2025/01/windows6.0-kb5050063-x64_b36d4e9e70805f9319e97294a8e707fa05945ff2.msu>>302-CU\filelist.txt
-echo ;windows6.0-kb5050063-x86-2025-01-Security-Monthly-Quality-Rollup-for-WS2008.msu https://catalog.s.download.windowsupdate.com/c/msdownload/update/software/secu/2025/01/windows6.0-kb5050063-x86_2a0581294607360ac3bc63c398e7d511e8f17317.msu>>302-CU\filelist.txt
-
-echo ;windows6.0-kb5052038-x64-2025-02-Security-Monthly-Quality-Rollup-for-WS2008.msu https://catalog.s.download.windowsupdate.com/d/msdownload/update/software/secu/2025/02/windows6.0-kb5052038-x64_dab70b0ba46d26adcfbc3930f366f7e2be879a04.msu>>302-CU\filelist.txt
-echo ;windows6.0-kb5052038-x86-2025-02-Security-Monthly-Quality-Rollup-for-WS2008.msu https://catalog.s.download.windowsupdate.com/d/msdownload/update/software/secu/2025/02/windows6.0-kb5052038-x86_8136bbac85e73556e426899b37dc9f9c1dd9bf59.msu>>302-CU\filelist.txt
-
-echo ;windows6.0-kb5053888-x64-2025-03-Security-Monthly-Quality-Rollup-for-WS2008.msu https://catalog.s.download.windowsupdate.com/c/msdownload/update/software/secu/2025/03/windows6.0-kb5053888-x64_d503536aaf2c582c3b8717ce3d50f14144a1acd5.msu>>302-CU\filelist.txt
-echo ;windows6.0-kb5053888-x86-2025-03-Security-Monthly-Quality-Rollup-for-WS2008.msu https://catalog.s.download.windowsupdate.com/c/msdownload/update/software/secu/2025/03/windows6.0-kb5053888-x86_13185cc3858a924c5cc45203742c0d3805aa0c3f.msu>>302-CU\filelist.txt
-
-echo ;windows6.0-kb5055609-x64-2025-04-Security-Monthly-Quality-Rollup-for-WS2008.msu https://catalog.s.download.windowsupdate.com/c/msdownload/update/software/secu/2025/04/windows6.0-kb5055609-x64_2ac8084a82302bbffe22ae2c6eede09f00294459.msu>>302-CU\filelist.txt
-echo ;windows6.0-kb5055609-x86-2025-04-Security-Monthly-Quality-Rollup-for-WS2008.msu https://catalog.s.download.windowsupdate.com/c/msdownload/update/software/secu/2025/04/windows6.0-kb5055609-x86_e1906723e99596367818aabb345b8f8432bb64c7.msu>>302-CU\filelist.txt
-
-echo ;windows6.0-kb5058449-x64-2025-05-Security-Monthly-Quality-Rollup-for-WS2008.msu https://catalog.s.download.windowsupdate.com/d/msdownload/update/software/secu/2025/05/windows6.0-kb5058449-x64_3db96e5c6dda2a09c6e64cff304f2de4036a52f3.msu>>302-CU\filelist.txt
-echo ;windows6.0-kb5058449-x86-2025-05-Security-Monthly-Quality-Rollup-for-WS2008.msu https://catalog.s.download.windowsupdate.com/d/msdownload/update/software/secu/2025/05/windows6.0-kb5058449-x86_bc38c71ca1377e951d98d2f3e0fd024c003d5bb5.msu>>302-CU\filelist.txt
 
 echo windows6.0-kb5061198-x64-2025-05-Security-Monthly-Quality-Rollup-for-WS2008.msu https://catalog.s.download.windowsupdate.com/d/msdownload/update/software/secu/2025/05/windows6.0-kb5061198-x64_e230859f83f853706399d12c675234aa0cfce6d9.msu>>302-CU\filelist.txt
 echo windows6.0-kb5061198-x86-2025-05-Security-Monthly-Quality-Rollup-for-WS2008.msu https://catalog.s.download.windowsupdate.com/c/msdownload/update/software/secu/2025/05/windows6.0-kb5061198-x86_7bbfcc7fab05c12ef67da556d27537a8a6e0a9c1.msu>>302-CU\filelist.txt
@@ -247,24 +196,6 @@ mkdir 314-IE9-CU
 
 echo ;windows6.0-kb4534251-x64-2020-01-Cumulative-Security-Update-for-IE9-for-WS2008-v9.0.190.msu https://catalog.s.download.windowsupdate.com/c/msdownload/update/software/secu/2019/12/ie9-windows6.0-kb4534251-x64_b9279f8cb4b5b3879028549482d2c0fb74b929d3.msu>>314-IE9-CU\filelist.txt
 echo ;windows6.0-kb4534251-x86-2020-01-Cumulative-Security-Update-for-IE9-for-WS2008-v9.0.190.msu https://catalog.s.download.windowsupdate.com/d/msdownload/update/software/secu/2019/12/ie9-windows6.0-kb4534251-x86_3433fe33cb17a5d7f4a9801afffd122c8d90edf3.msu>>314-IE9-CU\filelist.txt
-
-echo ;windows6.0-kb5034120-x64-2024-01-Cumulative-Security-Update-for-IE9-for-WS2008-v9.0.315-(Requires-kb5032384).msu https://catalog.s.download.windowsupdate.com/c/msdownload/update/software/secu/2024/01/windows6.0-kb5034120-x64_fd291fef3da8a9d4ce28f552ce501e09d76d788c.msu>>314-IE9-CU\filelist.txt
-echo ;windows6.0-kb5034120-x86-2024-01-Cumulative-Security-Update-for-IE9-for-WS2008-v9.0.315-(Requires-kb5032384).msu https://catalog.s.download.windowsupdate.com/c/msdownload/update/software/secu/2024/01/windows6.0-kb5034120-x86_556e533b556877db7b594b089dc97be72ddca4fc.msu>>314-IE9-CU\filelist.txt
-
-echo ;windows6.0-kb5040426-x64-2024-07-Cumulative-Security-Update-for-IE9-for-WS2008-v9.0.320-(Requires-kb5032384).msu https://catalog.s.download.windowsupdate.com/d/msdownload/update/software/secu/2024/07/windows6.0-kb5040426-x64_4e3700d684c88575b3d3c036c9399498fc2f43cd.msu>>314-IE9-CU\filelist.txt
-echo ;windows6.0-kb5040426-x86-2024-07-Cumulative-Security-Update-for-IE9-for-WS2008-v9.0.320-(Requires-kb5032384).msu https://catalog.s.download.windowsupdate.com/d/msdownload/update/software/secu/2024/07/windows6.0-kb5040426-x86_22ead50977df58990b5b9d01cdcbf9495d545b42.msu>>314-IE9-CU\filelist.txt
-
-echo ;windows6.0-kb5043049-x64-2024-09-Cumulative-Security-Update-for-IE9-for-WS2008-v9.0.325-(Requires-kb5039341).msu https://catalog.s.download.windowsupdate.com/c/msdownload/update/software/secu/2024/09/windows6.0-kb5043049-x64_aa6af10247695b34e059707e7281b29125d9e27e.msu>>314-IE9-CU\filelist.txt
-echo ;windows6.0-kb5043049-x86-2024-09-Cumulative-Security-Update-for-IE9-for-WS2008-v9.0.325-(Requires-kb5039341).msu https://catalog.s.download.windowsupdate.com/c/msdownload/update/software/secu/2024/09/windows6.0-kb5043049-x86_4f0f62c1acd06d05e4209efd89a7e3a1956c8092.msu>>314-IE9-CU\filelist.txt
-
-echo ;windows6.0-kb5049994-x64-2025-01-Cumulative-Security-Update-for-IE9-for-WS2008.msu https://catalog.s.download.windowsupdate.com/d/msdownload/update/software/secu/2025/01/windows6.0-kb5049994-x64_c9deab7230d5364e3c7c8c5cbb0830bd4d394267.msu>>314-IE9-CU\filelist.txt
-echo ;windows6.0-kb5049994-x86-2025-01-Cumulative-Security-Update-for-IE9-for-WS2008.msu https://catalog.s.download.windowsupdate.com/d/msdownload/update/software/secu/2025/01/windows6.0-kb5049994-x86_d47f452369d9875e13528fd96068a29f68a296ef.msu>>314-IE9-CU\filelist.txt
-
-echo ;windows6.0-kb5051972-x64-2025-02-Cumulative-Security-Update-for-IE9-for-WS2008.msu https://catalog.s.download.windowsupdate.com/d/msdownload/update/software/secu/2025/02/windows6.0-kb5051972-x64_a21e46c39922b7cdc1b2a6b211baafca8d2d2fdd.msu>>314-IE9-CU\filelist.txt
-echo ;windows6.0-kb5051972-x86-2025-02-Cumulative-Security-Update-for-IE9-for-WS2008.msu https://catalog.s.download.windowsupdate.com/d/msdownload/update/software/secu/2025/02/windows6.0-kb5051972-x86_0596cabdefffcd2a9b6e25501996127f5ce5e8ad.msu>>314-IE9-CU\filelist.txt
-
-echo ;windows6.0-kb5053593-x64-2025-03-Cumulative-Security-Update-for-IE9-for-WS2008-9.0.345.msu https://catalog.s.download.windowsupdate.com/c/msdownload/update/software/secu/2025/03/windows6.0-kb5053593-x64_7d1b041f031d0e1aabe49f5a04cc30c937e5d998.msu>>314-IE9-CU\filelist.txt
-echo ;windows6.0-kb5053593-x86-2025-03-Cumulative-Security-Update-for-IE9-for-WS2008-9.0.345.msu https://catalog.s.download.windowsupdate.com/c/msdownload/update/software/secu/2025/03/windows6.0-kb5053593-x86_140751c2150b9967975d379663f13732c5cb4fd5.msu>>314-IE9-CU\filelist.txt
 
 echo windows6.0-kb5055515-x64-2025-04-Cumulative-Security-Update-for-IE9-for-WS2008.msu https://catalog.s.download.windowsupdate.com/c/msdownload/update/software/secu/2025/03/windows6.0-kb5055515-x64_414d29b500e88106e91cf04e44c429c3d6eada48.msu>>314-IE9-CU\filelist.txt
 echo windows6.0-kb5055515-x86-2025-04-Cumulative-Security-Update-for-IE9-for-WS2008.msu https://catalog.s.download.windowsupdate.com/c/msdownload/update/software/secu/2025/03/windows6.0-kb5055515-x86_239c9a51ed72afc9705c0df51c7343b3e6dc3f0b.msu>>314-IE9-CU\filelist.txt
