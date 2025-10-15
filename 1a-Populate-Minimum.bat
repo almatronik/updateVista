@@ -1,11 +1,14 @@
 ::--------------------------------------------------------------------------------------
 mkdir 001-Tools
 
-echo 7zip-2409-x64-20241129.exe https://7-zip.org/a/7z2409-x64.exe>>001-Tools\filelist.txt
-echo 7zip-2409-x86-20241129.exe https://7-zip.org/a/7z2409.exe>>001-Tools\filelist.txt
+echo ;7zip-2409-x64-20241129.exe https://7-zip.org/a/7z2409-x64.exe>>001-Tools\filelist.txt
+echo ;7zip-2409-x86-20241129.exe https://7-zip.org/a/7z2409.exe>>001-Tools\filelist.txt
+echo 7zip-2501-x64-20250803.exe https://7-zip.org/a/7z2501-x64.exe>>001-Tools\filelist.txt
+echo 7zip-2501-x32-20250803.exe https://7-zip.org/a/7z2501.exe>>001-Tools\filelist.txt
 
 echo 406-Vista_SHA2_WUC-x86-x64.7z https://gitlab.com/stdout12/adns/uploads/9cc412e91502ca6ce8d1d9fad10b27d6/Vista_SHA2_WUC.7z>>001-Tools\filelist.txt
-echo 407-BypassESU_v7_WS2008-x86-x64-(pass=2023).7z https://gitlab.com/stdout12/adns/uploads/fdc7ef68584c12bf09b2358a8b807b66/BypassESU-v7-WS2008.7z>>001-Tools\filelist.txt
+echo ;407-BypassESU_v7_WS2008-x86-x64-(pass=2023).7z https://gitlab.com/stdout12/adns/uploads/fdc7ef68584c12bf09b2358a8b807b66/BypassESU-v7-WS2008.7zBypassESU-LH-v8.7z
+echo 407-BypassESU-LH-v8-(pass=2025).7z https://gitlab.com/-/project/11037551/uploads/356bb7a3089b66dcf061a722b0324569/BypassESU-LH-v8.7zBypassESU-LH-v8.7z
 echo 408-WU_DataStore_Fix-x86-x64.zip https://gitlab.com/stdout12/adns/uploads/e4a9c447ae15f7eb8fc42d8e8db54879/WU_DataStore_Fix.zip>>001-Tools\filelist.txt
 echo 410-WMF30_KB2506146_Vista_Installer-x86-x64.7z https://gitlab.com/stdout12/adns/uploads/caed19915206e9b2cb6dde377b9ed19e/WMF30-KB2506146-Vista-Installer.7z>>001-Tools\filelist.txt
 
