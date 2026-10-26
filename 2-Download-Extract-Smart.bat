@@ -1,48 +1,64 @@
 @echo off
 
-:: '0' == false, Only missing updates for your architecture will be downloaded, '1' == true, Will download everything
-set "backup=0"
+:: Uncomment if you need a full backup of the MSU files
+@REM set "backup=true"
 set ping_timer=3
+
 set "arch=x86"
 set "bit=32"
+set "FF_REG=HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\firefox.exe"
 if exist "%WinDir%\SysWOW64" (
 	set "arch=x64"
 	set "bit=64"
+	set "FF_REG=HKLM\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\App Paths\firefox.exe"
 )
+
+set "firefox_link=https://archive.mozilla.org/pub/firefox/releases/52.9.0esr/win32-sha1/en-US/Firefox Setup 52.9.0esr.exe"
+set "wget_link=https://eternallybored.org/misc/wget/1.25.0/%bit%/wget.exe"
 
 set "wget_path=%~dp0000-wget\%arch%"
 if not exist "%wget_path%" (
 	mkdir "%wget_path%"
 )
 
+set "FF_EXE="
+for /F "skip=2 tokens=2*" %%A in ('reg query "%FF_REG%" /ve 2^>nul') do (
+    set "FF_EXE=%%B"
+)
+
 :WGET
 if not exist "%wget_path%\wget.exe" (
 	cls
 
-	echo ===============================================================================
-	echo Firefox is needed to open wget's download link.
-	echo The link will open after you click any key.
-	echo Install it and set it as default.
-	echo ===============================================================================
-	call :SHORTCUT "%~dp0Firefox-52.9.0esr-sha1-download.url" "https://archive.mozilla.org/pub/firefox/releases/52.9.0esr/win32-sha1/en-US/Firefox Setup 52.9.0esr.exe"
-	pause
-	"%~dp0Firefox-52.9.0esr-sha1-download.url" && del "%~dp0Firefox-52.9.0esr-sha1-download.url"
-	pause
+	if not defined FF_EXE (
+		echo ===============================================================================
+		echo Firefox is needed to open wget's download link.
+		echo The link will open after you click any key.
+		echo Install it and set it as default.
+		echo Link: %firefox_link%
+		echo ===============================================================================
+		call :SHORTCUT "%~dp0Firefox-52.9.0esr-sha1-download.url" "%firefox_link%"
+		pause
+		"%~dp0Firefox-52.9.0esr-sha1-download.url" && del "%~dp0Firefox-52.9.0esr-sha1-download.url"
+		pause
+	) else (
+		echo Firefox found in "%FF_EXE%"
+	)
 	echo.
 
 	echo ===============================================================================
 	echo Download wget.exe and placed it in:
 	echo %wget_path%\wget.exe
+	echo Link: %wget_link%
 	echo ===============================================================================
-	@REM call :SHORTCUT "%wget_path%\wget-%arch%-Download.url" "https://eternallybored.org/misc/wget/1.21.3/%bit%/wget.exe"
-	call :SHORTCUT "%wget_path%\wget.url" "https://eternallybored.org/misc/wget/1.21.4/%bit%/wget.exe"
+	call :SHORTCUT "%wget_path%\wget.url" "%wget_link%"
 	pause
 	"%wget_path%\wget.url" && del "%wget_path%\wget.url"
 	pause
 	echo.
 	
 	if exist "%wget_path%\wget.exe" (
-		echo wget.exe is succesfully placed where it should, proceeding...
+		echo wget.exe is successfully placed where it should, proceeding...
 		echo.
 		ping 127.0.0.1 -n %ping_timer% > nul
 	) else (
@@ -56,8 +72,11 @@ if not exist "%wget_path%\wget.exe" (
 )
 
 echo ===============================================================================
-if %backup% == 0 ( echo ========================= Download mode: smart ================================)
-if %backup% == 1 ( echo ========================= Download mode: backup ===============================)
+if defined backup (
+	echo ========================= Download mode: backup ===============================
+) else (
+	echo ========================= Download mode: smart ================================
+)
 echo ===============================================================================
 ping 127.0.0.1 -n %ping_timer% > nul
 
@@ -67,10 +86,9 @@ for /d %%a in (*) do (
 	if exist "%~dp0%%a\filelist.txt" (
 		for /f "eol=; tokens=1,2*" %%i in (filelist.txt) do (
 			if not exist "%~dp0%%a\%%i" (
-				if %backup% == 1 (
+				if defined backup (
 					"%~dp0000-wget\%arch%\wget.exe" -q --show-progress --no-hsts --no-check-certificate -O "%%i" "%%j"
-				)
-				if %backup% == 0 (
+				) else (
 					for /f "tokens=2,3,4 delims=-" %%k in ('echo "%%i"') do (
 						if not exist "%SystemRoot%\servicing\packages\package_*_for_%%k*.mum" (
 							for /f "tokens=1 delims=." %%n in ('echo %%l') do (
@@ -142,36 +160,9 @@ REM echo =======================================================================
 REM echo ===================== Abbodi's Repacks ========================================
 REM echo ===============================================================================
 
-@REM for /f %%i in ("%~dp0001-Tools\DirectX-Repack*.zip") do (
-@REM 	if not exist "%~dp0211-Repacks\DirectX_Redist_Repack_x86_x64.exe" (
-@REM 		echo Extracting DirectX_Repack
-@REM 		"%programfiles%\7-Zip\7z.exe" x "%~dp0001-Tools\DirectX-Repack*.zip" -o"%~dp0211-Repacks\" -aoa > nul
-@REM 		ping 127.0.0.1 -n %ping_timer% > nul
-@REM 	)
-@REM )
-if exist "%~dp0001-Tools\DirectX-Repack*.zip" (
-	if not exist "%~dp0211-Repacks\DirectX_Redist_Repack_x86_x64.exe" (
-		echo Extracting DirectX_Repack
-		"%programfiles%\7-Zip\7z.exe" x "%~dp0001-Tools\DirectX-Repack*.zip" -o"%~dp0211-Repacks\" -aoa > nul
-		ping 127.0.0.1 -n %ping_timer% > nul
-	)
-)
-
-if exist "%~dp0001-Tools\dotNetFx35-Repack*.zip" (
-	if not exist "%~dp0211-Repacks\dotNetFx35_x86_x64.exe" (
-		echo Extracting dotNetFx35 repack
-		ping 127.0.0.1 -n %ping_timer% > nul
-		"%programfiles%\7-Zip\7z.exe" x "%~dp0001-Tools\dotNetFx35-Repack*.zip" -o"%~dp0211-Repacks\" -aoa > nul
-	)
-)
-
-if exist "%~dp0001-Tools\NDP462-Repack-x86-x64-ENU*.zip" (
-	if not exist "%~dp0211-Repacks\NDP462-x86-x64-ENU.exe" (
-		echo Extracting NDP462-x86-x64-ENU
-		"%programfiles%\7-Zip\7z.exe" x "%~dp0001-Tools\NDP462-Repack-x86-x64-ENU*.zip" -o"%~dp0211-Repacks\" -aoa > nul
-		ping 127.0.0.1 -n %ping_timer% > nul
-	)
-)
+call :EXTRACT DirectX-Repack DirectX_Redist_Repack_x86_x64
+call :EXTRACT dotNetFx35-Repack dotNetFx35_x86_x64
+call :EXTRACT NDP462-Repack-x86-x64-ENU NDP462-x86-x64-ENU
 
 echo.
 echo Creating WinDefender Definition download link...
@@ -191,18 +182,30 @@ ping 127.0.0.1 -n %ping_timer% > nul
 
 goto :EOF
 
-REM example FETCH call usage
-call :FETCH %%i %%j
+REM Usage:
+REM call :FETCH %%i %%j
 :FETCH
 "%~dp0000-wget\%arch%\wget.exe" -q --show-progress --no-hsts --no-check-certificate -O "%1" "%2"
 exit /b
 
-REM example SHORTCUT call usage
-call :SHORTCUT link.txt www.google.com
+REM Usage:
+REM call :SHORTCUT link.txt www.google.com
 :SHORTCUT
 echo [{000214A0-0000-0000-C000-000000000046}]>>"%1"
 echo Prop3=19,11>>"%1"
 echo [InternetShortcut]>>"%1"
 echo URL=%2>>"%1"
 echo IDList=>>"%1"
+exit /b
+
+REM Usage:
+REM call :EXTRACT archive executable
+:EXTRACT
+if exist "%~dp0001-Tools\%1*.zip" (
+	if not exist "%~dp0211-Repacks\%2.exe" (
+		echo Extracting %2
+		"%programfiles%\7-Zip\7z.exe" x "%~dp0001-Tools\%1*.zip" -o"%~dp0211-Repacks\" -aoa > nul
+		ping 127.0.0.1 -n %ping_timer% > nul
+	)
+)
 exit /b
